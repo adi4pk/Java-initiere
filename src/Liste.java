@@ -1,4 +1,6 @@
+import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Liste {
 
@@ -19,6 +21,11 @@ public class Liste {
         // ============================================================
 
         // TODO
+
+        ArrayList<Integer> lista = new ArrayList<>();
+        lista.add(10);
+        lista.addAll(Arrays.asList(10, 20, 30, 40));
+        System.out.println(lista);
     }
 
     public static void list02() {
@@ -43,6 +50,14 @@ public class Liste {
         // ============================================================
 
         // TODO
+
+        ArrayList<Integer> lista = new ArrayList<>(
+        Arrays.asList(5, 7, 8, 9, 10)
+        );
+
+        for(int i=0; i<lista.size(); i++){
+            System.out.println(lista.get(i));
+        }
     }
 
     public static void list03() {
@@ -57,6 +72,18 @@ public class Liste {
         // ============================================================
 
         // TODO
+
+        ArrayList<Integer> lista = new ArrayList<>(
+                Arrays.asList(3, 7, 2, 9, 4)
+        );
+
+        int sum = 0;
+
+        for (int i =0; i<lista.size(); i++){
+            sum = sum + lista.get(i);
+        }
+
+        System.out.println("Sum = " +sum);
     }
 
     public static void list04() {
@@ -72,6 +99,13 @@ public class Liste {
         // ============================================================
 
         // TODO
+
+        ArrayList<Integer> lista = new ArrayList<>(
+                Arrays.asList(10, 20, 30, 40, 50)
+        );
+
+        lista.remove(2);
+        System.out.println(lista);
     }
 
     public static void list05() {
@@ -90,6 +124,17 @@ public class Liste {
         // ============================================================
 
         // TODO
+
+        ArrayList<String> arrayStr = new ArrayList<>(
+                Arrays.asList("Ana", "Ion", "Maria")
+        );
+        if(arrayStr.contains("Ion")){
+//            return arrayStr.contains("Ion");
+            System.out.println("DA, exista.");
+        } else{
+            System.out.println("NU, nu exista.");
+        }
+
     }
 
     public static void list06() {
@@ -106,6 +151,14 @@ public class Liste {
         // ============================================================
 
         // TODO
+
+        ArrayList<String> listaStr = new ArrayList<>(
+                Arrays.asList("Ana", "Ion", "Maria", "Maria")
+        );
+
+        int x = listaStr.indexOf("Maria");
+
+        System.out.println("Maria este la pozitia " + x);
     }
 
     public static void list07() {
@@ -120,6 +173,20 @@ public class Liste {
         // ============================================================
 
         // TODO
+
+        int ct = 0;
+
+        ArrayList<Integer> lista = new ArrayList<>(
+                Arrays.asList(5, 12, 3, 20, 8, 15)
+        );
+
+        for(int i=0; i<lista.size(); i++){
+            if(lista.get(i)>10){
+                ct+=1;
+            }
+        }
+
+        System.out.println("Mai mari decat 10: " +ct);
     }
 
     public static void list08() {
@@ -135,6 +202,20 @@ public class Liste {
         // ============================================================
 
         // TODO
+
+        ArrayList<Integer> lista = new ArrayList<>(
+          Arrays.asList(3, 4, 7, 8, 10, 11)
+        );
+
+        ArrayList<Integer> pare = new ArrayList<>();
+
+        for(int i=0; i<lista.size(); i++){
+            if(lista.get(i) % 2 == 0){
+                pare.add(i);
+            }
+        }
+
+        System.out.println("Lista pare: " +pare);
     }
 
     public static void list09() {
@@ -150,6 +231,20 @@ public class Liste {
         // ============================================================
 
         // TODO
+
+        ArrayList<Integer> lista = new ArrayList<>(
+                Arrays.asList(3, 7, 2, 9, 4)
+        );
+
+        int max = 0;
+//        var var = 1;
+
+        for(int i =0; i<lista.size()-1; i++){
+            if(lista.get(i) < lista.get(i+1)){
+                max = lista.get(i+1);
+            }
+        }
+        System.out.println("cel mai mare nr. este: " +max);
     }
 
     public static void list10() {
@@ -166,5 +261,17 @@ public class Liste {
         // ============================================================
 
         // TODO
+
+        ArrayList<Integer> lista = new ArrayList<>(
+                Arrays.asList(10, 20, 30)
+        );
+
+        ArrayList<Integer> inversata = new ArrayList<>();
+
+        for(int i=lista.size()-1; i>-1; i--){
+            inversata.add(lista.get(i));
+        }
+
+        System.out.println("Inversata: " +inversata);
     }
 }

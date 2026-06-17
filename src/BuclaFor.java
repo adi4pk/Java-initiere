@@ -16,6 +16,10 @@ public class BuclaFor {
         // ============================================================
 
         // TODO
+
+        for(int i=0;i<10;i++){
+            System.out.println(i);
+        }
     }
 
     public static void for02() {
@@ -34,6 +38,10 @@ public class BuclaFor {
         // ============================================================
 
         // TODO
+
+        for(int i=10; i>0; i--){
+            System.out.println(i);
+        }
     }
 
     public static void for03() {
@@ -52,6 +60,12 @@ public class BuclaFor {
         // ============================================================
 
         // TODO
+
+        for(int i=1; i<20; i= i+2){
+            if(i % 2 == 1){
+                System.out.println(i);
+            }
+        }
     }
 
     public static void for04() {
@@ -70,6 +84,10 @@ public class BuclaFor {
         // ============================================================
 
         // TODO
+
+        for(int i=0; i<11; i++){
+            System.out.println(i * i);
+        }
     }
 
     public static void for05() {
@@ -88,6 +106,10 @@ public class BuclaFor {
         // ============================================================
 
         // TODO
+
+        for(int i=1; i<6;i++){
+            System.out.println(i * i * i);
+        }
     }
 
     public static void for06() {
@@ -106,6 +128,12 @@ public class BuclaFor {
         // ============================================================
 
         // TODO
+
+        int k = 7;
+        for(int i=1; i<11; i++){
+            int x = k * i;
+            System.out.println(x);
+        }
     }
 
     public static void for07() {
@@ -120,6 +148,14 @@ public class BuclaFor {
         // ============================================================
 
         // TODO
+
+        int n = 100;
+        int x = 0;
+        for(int i =1;i<n+1; i++){
+
+            x = x+i;
+        }
+        System.out.println("n = "+n + ". Suma de la 1 la n este " +x);
     }
 
     public static void for08() {
@@ -134,6 +170,16 @@ public class BuclaFor {
         // ============================================================
 
         // TODO
+
+        int n = 10;
+        int ct = 0;
+        for(int i=0; i<n+1; i++){
+            if(i % 2 == 0){
+                ct = ct + i;
+            }
+        }
+
+        System.out.println("suma parelor este "+ct);
     }
 
     public static void for09() {
@@ -149,6 +195,16 @@ public class BuclaFor {
         // ============================================================
 
         // TODO
+
+        int n = 21;
+        int ct = 0;
+        for(int i =1; i<n+1; i++){
+          if(i % 3 == 0){
+              ct++;
+          }
+        }
+        System.out.println("Multipli de 3 intre 1 si " +n + " : " +ct);
+
     }
 
     public static void for10() {
@@ -171,5 +227,15 @@ public class BuclaFor {
         // ============================================================
 
         // TODO
+
+        int n = 6;
+        int putere = 1;
+        for(int i =0; i<n+1; i++){
+            System.out.println("rezultat: 2 ^ " +i + " = " +putere );
+            putere = putere * 2;
+
+
+
+        }
     }
 }

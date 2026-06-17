@@ -14,7 +14,12 @@ public class BuclaWhile {
         //   ...
         //   10
         // ============================================================
+        int ct=0;
 
+        while(ct!=10){
+            System.out.println(ct);
+            ct++;
+        }
         // TODO
     }
 
@@ -35,6 +40,15 @@ public class BuclaWhile {
         // ============================================================
 
         // TODO
+
+        int ct = 10;
+        while(ct!=0){
+            System.out.println(ct);
+            ct--;
+        }
+        if(ct == 0){
+            System.out.println("Start");
+        }
     }
 
     public static void while03() {
@@ -53,6 +67,15 @@ public class BuclaWhile {
         // ============================================================
 
         // TODO
+
+        int ct = 0;
+        while(ct!=20){
+            ct++;
+            if(ct % 2 == 0){
+                System.out.println(ct);
+            }
+
+        }
     }
 
     public static void while04() {
@@ -71,6 +94,10 @@ public class BuclaWhile {
         // ============================================================
 
         // TODO
+
+
+
+
     }
 
     public static void while05() {

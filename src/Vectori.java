@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Vectori {
 
     public static void vec01() {
@@ -19,6 +21,13 @@ public class Vectori {
         // ============================================================
 
         // TODO
+
+        int[] v = {3, 7, 2, 9, 4};
+
+        for(int i=0; i<v.length; i++){
+            int e = v[i];
+            System.out.println(e);
+        }
     }
 
     public static void vec02() {
@@ -33,6 +42,13 @@ public class Vectori {
         // ============================================================
 
         // TODO
+
+        int[] v = {3, 7, 2, 9, 4};
+        int suma = 0;
+        for(int i =0; i<v.length; i++){
+            suma = suma+ v[i];
+        }
+        System.out.println(suma);
     }
 
     public static void vec03() {
@@ -47,6 +63,17 @@ public class Vectori {
         // ============================================================
 
         // TODO
+
+        int [] v = {3, 7, 2, 9, 4};
+        int media = 0;
+        int ct = 0;
+        for(int i =0; i<v.length; i++){
+            ct = ct+ v[i];
+        }
+        media = ct/v.length;
+
+        System.out.println("Media aritmetica este: " +media);
+
     }
 
     public static void vec04() {
@@ -63,6 +90,18 @@ public class Vectori {
         // ============================================================
 
         // TODO
+
+        int[] v = {3, 7, 2, 9, 4};
+        int max = v[0];
+
+        for(int i=0; i<v.length; i++){
+
+            if(v[i] > max){
+                max = v[i];
+            }
+        }
+
+        System.out.println("Maximumul este " +max);
     }
 
     public static void vec05() {
@@ -76,6 +115,17 @@ public class Vectori {
         // ============================================================
 
         // TODO
+
+        int[] v={3, 7, 2, 9, 4};
+        int min = v[0];
+
+        for(int i=0; i<v.length; i++){
+            if(v[i] < min){
+                min = v[i];
+            }
+        }
+
+        System.out.println("Minimumul este " +min);
     }
 
     public static void vec06() {
@@ -90,6 +140,17 @@ public class Vectori {
         // ============================================================
 
         // TODO
+
+        int[] v = {3, 7, 2, 9, 4};
+        int pare = 0;
+
+        for(int i =0;i<v.length; i++){
+            if(v[i] % 2 == 0){
+                pare+=1;
+            }
+        }
+
+        System.out.println("Pare: " + pare);
     }
 
     public static void vec07() {
@@ -109,6 +170,18 @@ public class Vectori {
         // ============================================================
 
         // TODO
+
+        int[] v = {3, 7, 2, 9, 4};
+
+        int cautat = 9;
+        boolean gasit =false;
+
+        for(int i=0; i<v.length&&gasit==false; i++){
+            if(v[i] == cautat){
+                System.out.println("Gasit la pozitia " +i);
+                gasit = true;
+            }
+        }
     }
 
     public static void vec08() {
@@ -127,6 +200,11 @@ public class Vectori {
         // ============================================================
 
         // TODO
+
+        int[] v = {3, 7, 2, 9, 4};
+        for(int i=v.length-1; i>=0; i--){
+            System.out.println(v[i]);
+        }
     }
 
     public static void vec09() {
@@ -141,6 +219,17 @@ public class Vectori {
         // ============================================================
 
         // TODO
+
+        int [] v = {3, 7, 2, 9, 4, 7, 7};
+
+            int cifra = 7;
+            int ct=0;
+            for(int i=0; i<v.length; i++){
+                if(v[i] == cifra){
+                    ct+=1;
+                }
+            }
+        System.out.println(cifra + " apare de " + ct + " ori");
     }
 
     public static void vec10() {
@@ -160,5 +249,19 @@ public class Vectori {
         // ============================================================
 
         // TODO
+
+        int [] n = {3, 7, 2, 9, 4};
+        for(int i=0; i<n.length - 1; i++){
+            for(int j=0; j < n.length - 1 - i; j++){
+                if(n[j] > n[j+1]){
+                    int aux = n[j];
+                    n[j] = n[j+1];
+                    n[j+1] = aux;
+                }
+            }
+        }
+
+        System.out.println(Arrays.toString(n));
+        System.out.println(n);
     }
 }

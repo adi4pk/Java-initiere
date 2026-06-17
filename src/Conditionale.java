@@ -14,6 +14,14 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+        int numar=12;
+        if(numar>0){
+            System.out.println("este pozitiv");
+        }else if(numar<0){
+            System.out.println("este negativ");
+        }else{
+            System.out.println("zero");
+        }
     }
 
     public static void cond02() {
@@ -29,6 +37,16 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+
+        int numar = 13;
+        if(numar % 2 == 0){
+            System.out.println("numarul este par");
+        } else if(numar % 2 == 1){
+            System.out.println("numarul este impar");
+        } else {
+            System.out.println("numarul este zero");
+        }
+
     }
 
     public static void cond03() {
@@ -43,6 +61,18 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+
+        int a = 5;
+        int b = 10;
+
+        if(a < b){
+            System.out.println("Maxim = "+b);
+        } else if(a > b){
+            System.out.println("Maxim ="+a);
+        } else {
+            System.out.println("numerele sunt egale.");
+        }
+
     }
 
     public static void cond04() {
@@ -57,11 +87,31 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+
+        // declara maximul de la cel mai mic nr.
+
+        int a = 4;
+        int b = 9;
+        int c = 7;
+
+        int maxim = a;
+
+        if(b > maxim) {
+//            b = maxim;      // X - b = 4
+            maxim = b;
+        }
+
+        if(c > maxim){
+            maxim = c;
+        }
+
+        System.out.println("Maximul este " +maxim);
+
     }
 
     public static void cond05() {
         // ============================================================
-        // CONDITIONAL 05 - CALIFICATIV PE BAZA NOTEI
+        // CONDITIONAL 05 - CALIFICATIV PE BAZA NOTEI/
         // ============================================================
         // Declara o variabila int `nota` cu o valoare intre 1 si 10.
         // Afiseaza calificativul:

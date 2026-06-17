@@ -12,6 +12,16 @@ public class ConditionaleNivelMediu {
         // ============================================================
 
         // TODO
+
+        int [] v = {4, 12, 8, 15};
+        int max = 0;
+        for(int i=0; i<v.length-1; i++){
+            if(v[i] < v[i+1]){
+                max = v[i+1];
+            }
+        }
+
+        System.out.println("Maximumul este " + max);
     }
 
     public static void med02() {

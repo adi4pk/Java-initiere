@@ -13,6 +13,9 @@ public class Stringuri {
         // ============================================================
 
         // TODO
+
+        String s = "test";
+        System.out.println(s.length());
     }
 
     public static void str02() {
@@ -36,6 +39,12 @@ public class Stringuri {
         // ============================================================
 
         // TODO
+
+        String s = "test";
+        for(int i = 0; i<s.length(); i++){
+            char c = s.charAt(i);           //“String, please give me the character at position i”
+            System.out.println(c);
+        }
     }
 
     public static void str03() {
@@ -50,6 +59,11 @@ public class Stringuri {
         // ============================================================
 
         // TODO
+
+        String nume = "Dumitru";
+        String prenume = "Alexandru";
+
+        System.out.println("Salut, " + nume + " " +prenume);
     }
 
     public static void str04() {
@@ -118,6 +132,20 @@ public class Stringuri {
         // ============================================================
 
         // TODO
+
+        int ct = 0;
+
+        String test = "test-test";
+        char litera = 't';
+
+        for(int i=0; i<test.length(); i++){
+            if(test.charAt(i) == litera){
+                ct+=1;
+            }
+        }
+
+        System.out.println(litera + " apare de "+ct +" ori");
+
     }
 
     public static void str08() {
@@ -134,6 +162,15 @@ public class Stringuri {
         // ============================================================
 
         // TODO
+
+        var var = "";
+
+        String test = "qwerty";
+        for(int i=test.length()-1; i>-1; i--){
+            var = var + test.charAt(i);
+        }
+
+        System.out.println(var);
     }
 
     public static void str09() {
@@ -153,6 +190,20 @@ public class Stringuri {
         // ============================================================
 
         // TODO
+
+        String test = "ana";
+        String invers = "";
+
+        for(int i=0,j=test.length()-1; i<test.length()&j>=0; i++,j--){
+         if(test.charAt(i) == test.charAt(j)){
+             System.out.println("OK");
+         }
+        }
+
+//        1, 2, 3, 4, 3, 2, 1
+//        length = 7
+        //i = 2;
+
     }
 
     public static void str10() {
