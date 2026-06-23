@@ -262,6 +262,6 @@ public class Vectori {
         }
 
         System.out.println(Arrays.toString(n));
-        System.out.println(n);
+
     }
 }

@@ -35,7 +35,7 @@ public class Main {
 //        Vectori.vec06();
 //        Vectori.vec07();
 //        Vectori.vec08();
-        Vectori.vec09();
+//        Vectori.vec09();
         Vectori.vec10();
 
         ConditionaleNivelMediu.med01();
@@ -57,6 +57,27 @@ public class Main {
         Stringuri.str07();
         Stringuri.str08();
         Stringuri.str09();
+        Conditionale.cond05();
+        Conditionale.cond06();
+        Conditionale.cond07();
+        Conditionale.cond08();
+        Conditionale.cond10();
+        Conditionale.cond11();
+        Conditionale.cond12();
+
+
+        BuclaWhile.while04();
+        BuclaWhile.while05();
+
+        ExercitiiCombinate.ex01();
+        ExercitiiCombinate.ex02();
+//        ExercitiiCombinate.ex05();
+//        ExercitiiCombinate.ex06();
+//        ExercitiiCombinate.ex07();
+//        ExercitiiCombinate.ex08();
+//        ExercitiiCombinate.ex09();
+//        ExercitiiCombinate.ex10();
+        ExercitiiCombinate.ex11();
     }
 
 

@@ -95,6 +95,16 @@ public class BuclaWhile {
 
         // TODO
 
+        int n = 21;
+        int ct = 0;
+
+        while(ct<n){
+            ct++;
+            if(ct % 3 == 0){
+                System.out.println(ct);
+            }
+        }
+
 
 
 
@@ -112,6 +122,15 @@ public class BuclaWhile {
         // ============================================================
 
         // TODO
+
+        int n = 5;
+        int suma = 0;
+        int ct = 0;
+        while (ct<n){
+            ct++;
+            suma+= ct;
+        }
+        System.out.println("suma de la 1 la " +n + " = " +suma);
     }
 
     public static void while06() {

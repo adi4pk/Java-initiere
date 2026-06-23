@@ -125,6 +125,17 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+
+        int nota = 6;
+        if(nota>=9){
+            System.out.println("excelent");
+        } else if(nota >=7){
+            System.out.println("bine");
+        } else if(nota >=5){
+            System.out.println("suficient");
+        } else if(nota < 5){
+            System.out.println("insuficient");
+        }
     }
 
     public static void cond06() {
@@ -142,6 +153,17 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+
+        int varsta = 64;
+        if(varsta<13){
+            System.out.println("copil");
+        } else if (varsta > 13 && varsta <18) {
+            System.out.println("adolescent");
+        } else if (varsta >= 18 && varsta < 65 ){
+            System.out.println("adult");
+        } else if (varsta > 65){
+            System.out.println("varstnic");
+        }
     }
 
     public static void cond07() {
@@ -164,6 +186,20 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+
+        String utilizatorCorect = "admin";
+        String parolaCorecta = "1234dasds";
+
+        String utilizator = "admin";
+        String parola = "1234";
+
+        if(utilizator.equals(utilizatorCorect) && parola.equals(parolaCorecta)){
+            System.out.println("Login OK");
+        } else {
+            System.out.println("Date Invalide");
+        }
+
+
     }
 
     public static void cond08() {
@@ -182,6 +218,15 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+
+        int luna = 3;
+        if(luna > 11 || luna<3){
+            System.out.println("iarna");
+        } else if(luna>=3 && luna < 6){
+            System.out.println("primavara");
+        } else if(luna>=6 && luna <9){
+            System.out.println("vara");
+        } else System.out.println("toamna");
     }
 
     public static void cond09() {
@@ -204,6 +249,8 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+
+
     }
 
     public static void cond10() {
@@ -225,6 +272,24 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+
+        int an = 2024;
+
+        boolean isDivide4=an%4==0;
+        boolean notDivide100=an%100 == 1;
+        boolean isDivide400= an%400 == 0;
+
+        boolean isBisect= isDivide400||(isDivide4&&notDivide100);
+
+//        if(an % 4 == 0 && an % 100==0 || an % 400 == 0){
+//            System.out.println("an bisect");
+//        } else System.out.println("NOT an bisect");
+
+        if(isBisect){
+            System.out.println("Bisect");
+        } else{
+            System.out.println("NOT bisect");
+        }
     }
 
     public static void cond11() {
@@ -242,6 +307,23 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+
+        int numar = 0;
+        String semn = "";
+
+        boolean conditie = numar >0;
+//        if(conditie){
+//            semn = "pozitiv";
+//            System.out.println(numar + " este " + semn);
+//        }
+//        else {
+//            semn = "negativ";
+//            System.out.println(numar + " este " + semn);
+//        }
+
+        semn=conditie?"pozitiv":"negativ";
+
+        System.out.println(numar + " este " +semn);
     }
 
     public static void cond12() {
@@ -265,5 +347,18 @@ public class Conditionale {
         // ============================================================
 
         // TODO
+        double pretInitial = 1000;
+        boolean areCard = true;
+        double pretFinal = 0;
+
+        if(areCard && pretInitial >200){
+            pretFinal = pretInitial * 0.7;
+        } else if (areCard){
+            pretFinal = pretInitial * 0.8;
+        } else {
+            pretFinal = pretInitial * 0.9;
+        }
+
+        System.out.println("Pret final: "+ "$"+ pretFinal );
     }
 }
